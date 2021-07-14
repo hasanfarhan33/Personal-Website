@@ -43,10 +43,15 @@ span {
 .parallelogram {
   width: 70%;
   height: 100%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 1);
   z-index: 1;
   position: absolute;
   left: 40%;
+  transform: skew(18deg);
+  transition: 0.3s;
+}
+
+.parallelogram:hover {
   transform: skew(20deg);
 }
 
@@ -54,7 +59,7 @@ span {
   width: 200px;
   height: 50px;
   position: absolute;
-  left: 40%;
+  left: 10%;
   top: 30%;
   z-index: 4;
   border-radius: 10px;
@@ -82,9 +87,8 @@ span {
   width: 200px;
   height: 50px;
   position: absolute;
-  left: 42.5%;
+  left: 12.5%;
   top: 40%;
-  /* background-color: black; */
   z-index: 4;
   border-radius: 10px;
   transition: 0.3s;
@@ -111,7 +115,7 @@ span {
   width: 320px;
   height: 50px;
   position: absolute;
-  left: 45%;
+  left: 15%;
   top: 50%;
   z-index: 4;
   border-radius: 10px;
@@ -139,7 +143,7 @@ span {
   width: 150px;
   height: 50px;
   position: absolute;
-  left: 47.5%;
+  left: 17.5%;
   top: 60%;
   z-index: 4;
   transition: 0.3s;
