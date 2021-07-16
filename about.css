@@ -1,0 +1,30 @@
+h1 {
+  font-size: 60px;
+  color: black;
+  font-family: "Righteous";
+  position: absolute;
+  left: 60%;
+  z-index: 1;
+}
+
+.line {
+  width: 50px;
+  background-color: rgba(255, 0, 0, 0.9);
+  height: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 22%;
+  left: 65%;
+  transform: rotate(-45deg);
+}
+
+.imageContainer {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  left: -15%;
+  top: 0;
+  background-size: cover;
+  background-image: url("./Profile\ Picture.jpg");
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+}
