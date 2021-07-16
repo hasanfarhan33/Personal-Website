@@ -28,3 +28,46 @@ h1 {
   background-image: url("./Profile\ Picture.jpg");
   clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
 }
+
+.infoContainer {
+  /* background-color: red; */
+  position: absolute;
+  left: 47%;
+  top: 30%;
+  width: 35%;
+  height: 20%;
+  text-align: center;
+}
+
+p {
+  font-size: 30px;
+  font-family: "Righteous";
+}
+
+.languages {
+  /* color: rgb(10, 10, 10); */
+  position: absolute;
+  left: 55%;
+  top: 60%;
+  width: 20%;
+  border-bottom: 0 solid rgba(255, 0, 0, 0.9);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.1s;
+}
+
+.languages:hover {
+  border-bottom: 5px solid rgba(255, 0, 0, 0.9);
+}
+
+.languages .java,
+.languages .HTML,
+.languages .python,
+.languages .CSS,
+.languages .CPlusPlus {
+  width: 50px;
+  margin-bottom: 15px;
+}
