@@ -1,0 +1,76 @@
+h1 {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Righteous";
+}
+
+.line {
+  width: 50px;
+  background-color: rgba(255, 0, 0, 0.9);
+  height: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 13%;
+  left: 57%;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+.panels {
+  width: 90vw;
+  height: 75vh;
+  position: relative;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.portraits,
+.animals,
+.misc {
+  border-radius: 30px;
+}
+
+.portrait1 {
+  height: 90%;
+  width: 30%;
+  background-image: url(./Portraits/Portrait\ 21.png);
+  background-size: cover;
+  /* padding-bottom: 10px; */
+  transition: 0.3s;
+}
+
+.portrait2 {
+  height: 90%;
+  width: 30%;
+  background-image: url(./Portraits/Portrait\ 36.png);
+  background-size: cover;
+  transition: 0.3s;
+}
+
+.portrait3 {
+  height: 90%;
+  width: 30%;
+  background-image: url(./Portraits/Portrait\ 80.png);
+  background-size: cover;
+  transition: 0.3s;
+}
+
+/* Hover animations */
+.portrait1:hover {
+  border-bottom: 5px solid rgba(255, 0, 0, 0.9);
+  border-left: 5px solid rgba(255, 0, 0, 0.9);
+  border-radius: 10px;
+}
+
+.portrait2:hover {
+  border-bottom: 5px solid rgba(255, 0, 0, 0.9);
+  border-radius: 10px;
+}
+
+.portrait3:hover {
+  border-bottom: 5px solid rgba(255, 0, 0, 0.9);
+  border-right: 5px solid rgba(255, 0, 0, 0.9);
+  border-radius: 10px;
+}
