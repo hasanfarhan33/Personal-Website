@@ -251,7 +251,8 @@ span {
   left: 50%;
   top: 40%;
   width: 35vw;
-  text-align: center;
+  text-align: justify;
+  text-align-last: center;
 }
 
 .infoContainer p {
@@ -329,7 +330,7 @@ span {
 .portrait1 {
   height: 90%;
   width: 30%;
-  background-image: url(./Portraits/Portrait\ 21.png);
+  background-image: url(./Portraits/Portrait\ 81.png);
   background-size: cover;
   /* padding-bottom: 10px; */
   transition: 0.3s;
@@ -338,7 +339,7 @@ span {
 .portrait2 {
   height: 90%;
   width: 30%;
-  background-image: url(./Portraits/Portrait\ 36.png);
+  background-image: url(./Portraits/Portrait\ 82.png);
   background-size: cover;
   transition: 0.3s;
 }
@@ -381,7 +382,43 @@ span {
 }
 
 /* Website Section */
+.websiteSection {
+  overflow: hidden;
+  position: relative;
+}
 
+.websiteSection h1 {
+  font-size: 60px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.websiteSection .wLine {
+  width: 50px;
+  background-color: rgba(255, 0, 0, 0.9);
+  height: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 14%;
+  left: 57%;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+.websiteSection .underConstructionImage {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  left: 47vw;
+  top: 30vh;
+}
+
+.websiteSection .underConstructionText {
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  top: 32vh;
+}
 /* Other Projects Section */
 
 /* Social Section */
