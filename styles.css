@@ -290,6 +290,125 @@ section {
   width: 50px;
   height: auto;
   margin-bottom: 15px;
+  position: relative;
+}
+
+.languages .javaContainer,
+.languages .pythonContainer,
+.languages .htmlContainer,
+.languages .cssContainer,
+.languages .cPlusPlusContainer {
+  position: relative;
+}
+
+.languages .javaContainer::after {
+  content: "Java";
+  position: absolute;
+  background-color: var(--black);
+  left: -50%;
+  top: -90%;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.languages .javaContainer:hover::after {
+  opacity: 1;
+}
+
+.languages .pythonContainer::after {
+  content: "Python";
+  position: absolute;
+  background-color: var(--black);
+  left: -50%;
+  top: -90%;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.languages .pythonContainer:hover::after {
+  opacity: 1;
+}
+
+.languages .htmlContainer::after {
+  content: "HTML";
+  position: absolute;
+  background-color: var(--black);
+  left: -50%;
+  top: -90%;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.languages .htmlContainer:hover::after {
+  opacity: 1;
+}
+
+.languages .cssContainer::after {
+  content: "CSS";
+  position: absolute;
+  background-color: var(--black);
+  left: -50%;
+  top: -90%;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.languages .cssContainer:hover::after {
+  opacity: 1;
+}
+
+.languages .cPlusPlusContainer::after {
+  content: "C++";
+  position: absolute;
+  background-color: var(--black);
+  left: -50%;
+  top: -90%;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.languages .cPlusPlusContainer:hover::after {
+  opacity: 1;
 }
 
 /* Artworks Section */
@@ -449,10 +568,15 @@ section {
 /* Other Projects Section */
 
 /* Social Section */
+.socialSection {
+  overflow: hidden;
+}
+
 .socialSection h1 {
   font-size: 60px;
   text-align: center;
   padding-top: 50px;
+  overflow: hidden;
 }
 
 .socialSection .redLine {
@@ -475,18 +599,154 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .socialSection .iconsContainer {
-  background-color: gray;
+  /* background-color: gray; */
   width: 45vw;
-  height: 50vh;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-radius: 10px;
+  transition: 250ms;
+}
+
+.socialSection .iconsContainer:hover {
+  border-bottom: 5px solid var(--red);
 }
 
 .socialSection img {
   width: 50px;
   height: auto;
+}
+
+.stackOverflowContainer,
+.githubContainer,
+.instagramContainer,
+.linkedinContainer,
+.gmailContainer {
+  position: relative;
+  cursor: pointer;
+}
+
+.stackOverflowContainer::after {
+  content: "Stack Overflow";
+  position: absolute;
+  top: -150%;
+  left: -50%;
+  background-color: var(--black);
+  width: 120px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.stackOverflowContainer:hover::after,
+.githubContainer:hover::after,
+.instagramContainer:hover::after,
+.linkedinContainer:hover::after,
+.gmailContainer:hover::after {
+  opacity: 1;
+}
+
+.githubContainer::after {
+  content: "Check more projects on Github";
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  top: -250%;
+  left: -50%;
+  background-color: var(--black);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.instagramContainer::after {
+  content: "Instagram";
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  top: -150%;
+  left: -50%;
+  background-color: var(--black);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.linkedinContainer::after {
+  content: "LinkedIn";
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  top: -150%;
+  left: -50%;
+  background-color: var(--black);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.gmailContainer::after {
+  content: "Click to copy";
+  position: absolute;
+  width: 140px;
+  height: 70px;
+  top: -150%;
+  left: -50%;
+  background-color: var(--black);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.socialSection .darkSide {
+  position: absolute;
+  width: 500px;
+  height: 120vh;
+  background-color: var(--black);
+  top: 0;
+  right: -250px;
+  transform: rotate(15deg);
+}
+
+#checkCopy {
+  position: absolute;
+  /* background-color: red; */
+  font-size: 1.2rem;
+  left: 66vw;
+  top: 55vh;
 }
